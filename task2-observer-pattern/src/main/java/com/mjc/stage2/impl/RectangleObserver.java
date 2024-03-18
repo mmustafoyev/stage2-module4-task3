@@ -8,7 +8,7 @@ import com.mjc.stage2.repository.RectangleRepository;
 import com.mjc.stage2.warehouse.RectangleWarehouse;
 
 
-public class RectangleObserver  {
+public class RectangleObserver  implements Observer{
     @Override
     public void handleEvent(RectangleEvent event) {
         Rectangle rectangle = event.getSource();
