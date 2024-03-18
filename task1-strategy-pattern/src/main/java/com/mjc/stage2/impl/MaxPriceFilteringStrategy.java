@@ -1,6 +1,8 @@
 package com.mjc.stage2.impl;
 
 
+import com.mjc.stage2.FilteringStrategy;
+import com.mjc.stage2.Product;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
