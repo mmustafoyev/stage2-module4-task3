@@ -9,5 +9,9 @@ public class ShopStock {
         this.productList = productList;
     }
 
+    public List<Product> executeFilteringStrategy(FilteringStrategy filteringStrategy){
+        return productList.stream().filter(product -> filteringStrategy.filter(product)).
+                collect(Collectors.toList());
+    }
     // Write your code here!
 }
